@@ -36,12 +36,12 @@ if [ -f /opt/nanoNodeMonitor/modules/config.php ]; then
   rm -r /opt/nanoNodeMonitor
 
   # this also means we already inited
-  touch /opt/easy-nano-node/init
+  touch /opt/easy-betanano-node/init
 
 fi
 
 # check if init already done
-if [ -f /opt/easy-nano-node/init ]; then
+if [ -f /opt/easy-betanano-node/init ]; then
 
   echo "== Initialization already done, skipping ..."
 
@@ -68,10 +68,10 @@ else
   sed -i -e 's#\[::1\]#enn_nanonode_1#g' ~/nanoNodeMonitor/config.php
 
   echo "== Disabling RPC logging"
-  sed -i -e 's#"log_rpc": "true"#"log_rpc": "false"#g' ~/RaiBlocks/config.json
+  sed -i -e 's#"log_rpc": "true"#"log_rpc": "false"#g' ~/RaiBlocksBeta/config.json
 
   echo "== Opening Nano Node Port"
-  sudo ufw allow 7075
+  sudo ufw allow 54000
   
   echo "== Denying RPC Port"
   sudo ufw deny 7076
@@ -92,7 +92,7 @@ else
   echo -e "=== \e[31mYOUR WALLET SEED\e[39m ==="
 
   # we're done, save for later
-  touch /opt/easy-nano-node/init
+  touch /opt/easy-betanano-node/init
 
 fi
 
