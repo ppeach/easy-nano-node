@@ -92,7 +92,7 @@ else
   echo -e "=== \e[31mYOUR WALLET SEED\e[39m ==="
 
   # we're done, save for later
-  touch /opt/easy-betanano-node/init
+  touch /opt/easy-nano-node/init
 
 fi
 
