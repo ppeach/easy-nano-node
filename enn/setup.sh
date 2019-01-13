@@ -36,12 +36,12 @@ if [ -f /opt/nanoNodeMonitor/modules/config.php ]; then
   rm -r /opt/nanoNodeMonitor
 
   # this also means we already inited
-  touch /opt/easy-betanano-node/init
+  touch /opt/easy-nano-node/init
 
 fi
 
 # check if init already done
-if [ -f /opt/easy-betanano-node/init ]; then
+if [ -f /opt/easy-nano-node/init ]; then
 
   echo "== Initialization already done, skipping ..."
 
