@@ -7,6 +7,13 @@ Beta Nano nodes made simple!
 ```
 bash <(curl -s https://raw.githubusercontent.com/bananodroid/easy-nano-node/master/install.sh)
 ```
+Change IP address in nanonodemonitor/config.php to 
+
+$nanoNodeRPCIP   = 'enn_nanonode_1';
+
+and port for RPC to 
+
+$nanoNodeRPCPort = '55000';
 
 ## Support
 
