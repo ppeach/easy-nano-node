@@ -1,13 +1,11 @@
-# Easy Nano Node
+# Easy Beta Nano Node
 
-https://nanotools.github.io/easy-nano-node/
-
-Nano nodes made simple!
+Beta Nano nodes made simple!
 
 ## Installation
 
 ```
-bash <(curl -s https://raw.githubusercontent.com/nanotools/easy-nano-node/master/install.sh)
+bash <(curl -s https://raw.githubusercontent.com/bananodroid/easy-nano-node/master/install.sh)
 ```
 
 ## Support
