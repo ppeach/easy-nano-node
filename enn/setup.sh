@@ -16,7 +16,7 @@ if lsof -Pi :80 -sTCP:LISTEN -t >/dev/null ; then
 fi
 
 echo "== Updating Docker images"
-sudo docker pull nanocurrency/nano-beta
+sudo docker pull nanocurrency/nano-beta:latest-including-rc
 sudo docker pull nanotools/nanonodemonitor
 
 echo "== Starting Docker containers"
