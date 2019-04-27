@@ -68,7 +68,7 @@ else
   sed -i -e 's#\[::1\]#enn_nanonode_1#g' ~/nanoNodeMonitor/config.php
 
   echo "== Disabling RPC logging"
-  sed -i -e 's#"log_rpc": "true"#"log_rpc": "false"#g' ~/RaiBlocksBeta/config.json
+  sed -i -e 's#"log_rpc": "true"#"log_rpc": "false"#g' ~/NanoBeta/config.json
 
   echo "== Opening Nano Node Port"
   sudo ufw allow 54000
